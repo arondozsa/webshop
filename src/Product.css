@@ -4,8 +4,8 @@
   padding : 0.7rem;
   margin:1rem;
   justify-content: space-between;
-  border: 0.5px solid black;
-  box-shadow: 2px 2px 4px 2px grey;
+  border: 0.5px solid rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 6px 2px #999;
   border-radius: 18px;
 }
 .productsWrapper {
@@ -16,6 +16,7 @@
 .productCard button {
   width:60px;
   align-self: center;
+  cursor: pointer;
 }
 .productCard h4 {
   margin-top:0.5rem;
@@ -33,18 +34,41 @@
 }
 .cartWrapper {
   display: grid;
-  grid-template-columns: 50%;
-  gap:10px;
+  grid-template-columns: 100%;
+  margin: 1rem;
+  justify-items: space-around;
 }
 .cartCard {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-left: 1rem;
-  border: 0.5px solid black;
-  box-shadow: 2px 2px 4px 2px grey;
+  border: 0.5px solid rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 4px 2px #999;
   border-radius: 10px;
+  margin: 0.5rem;
+  justify-self: center;
+  width:90%;
+}
+.cartCard button {
+  cursor: pointer;
 }
 .cartCard * {
   margin: 0.5rem 2rem 0.5rem 1rem;
+}
+@media (max-width : 650px) {
+  .productsWrapper {
+    grid-template-columns: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.3rem 0.7rem;
+  border: 0.5px solid rgba(0,0,0,0.25);
+  border-radius: 11px;
+  background-color: #eee;
+}
+a:hover {
+  background-color: #ddd;
 }
