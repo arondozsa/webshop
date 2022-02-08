@@ -1,0 +1,50 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  padding : 0.7rem;
+  margin:1rem;
+  justify-content: space-between;
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 4px 2px grey;
+  border-radius: 18px;
+}
+.productsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 1rem;
+}
+.productCard button {
+  width:60px;
+  align-self: center;
+}
+.productCard h4 {
+  margin-top:0.5rem;
+  font-size: 1.35rem;
+  align-self: center;
+}
+.productCard span {
+  padding: 1rem;
+  align-self: end;
+}
+.productCard p {
+  text-align: justify;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.cartWrapper {
+  display: grid;
+  grid-template-columns: 50%;
+  gap:10px;
+}
+.cartCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 1rem;
+  border: 0.5px solid black;
+  box-shadow: 2px 2px 4px 2px grey;
+  border-radius: 10px;
+}
+.cartCard * {
+  margin: 0.5rem 2rem 0.5rem 1rem;
+}

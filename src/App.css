@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  gap : 20px;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: baseline;
+
+}
+header input {
+  height: 1rem;
+}
+@media (max-width : 650px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+  header h1 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  header input {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 80%;
+    justify-self: center;
+  }
+  header a {
+    grid-row: 3;
+    justify-self: center;
+  }
+}
