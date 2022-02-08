@@ -1,0 +1,28 @@
+[
+  {
+    "name" : "ez",
+    "price" : 12,
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non risus lacinia, rhoncus dui."
+  }, 
+  {
+    "name" : "az",
+    "price" : 24,
+    "description" : "Praesent volutpat leo vitae orci maximus, vel rutrum erat bibendum. Praesent porta tristique magna ornare porttitor. Praesent vel augue quis magna elementum ultricies."
+  },
+  {
+    "name" : "amaz",
+    "price" : 16,
+    "description" : "Nunc porttitor facilisis malesuada. Fusce fringilla ac risus ut ultrices."
+  },
+  {
+    "name" : "emez",
+    "price" : 19,
+    "description" : "Quisque egestas ex non diam dapibus iaculis. Nulla tortor augue, suscipit ut blandit mattis, hendrerit eget lacus."
+  },
+  {
+    "name" : "azmeg",
+    "price" : 14,
+    "description" : "Mauris nec lacus sed quam posuere consectetur eget eget arcu. Maecenas nec tellus in elit tempus venenatis vitae ut libero."
+  }
+
+]
