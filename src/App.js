@@ -6,12 +6,15 @@ import Products from './Products';
 import React from 'react'
 import { CartContext } from './CartContext';
 import Cart from './Cart';
+import { SearchContext } from './SearchContext';
 
 function App() {
   let [cart , setCart] = React.useState(null)
+  let [search, setSearch] = React.useState('')
   console.log(cart)
   return (
     <BrowserRouter>
+    <SearchContext.Provider value = {{search : search, setSearch : setSearch}}>
       <CartContext.Provider value =  {{'cart' : cart , 'setCart' : setCart} }>
         <Header />
           <Routes>
@@ -20,6 +23,7 @@ function App() {
           </Routes>
 
       </CartContext.Provider>
+      </SearchContext.Provider>
     </BrowserRouter>
   );
 }
