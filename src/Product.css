@@ -7,6 +7,7 @@
   border: 0.5px solid rgba(0,0,0,0.5);
   box-shadow: 4px 4px 6px 2px #999;
   border-radius: 18px;
+  background-color: #ddd;
 }
 .productsWrapper {
   display: grid;
@@ -49,6 +50,7 @@
   margin: 0.5rem;
   justify-self: center;
   width:90%;
+  background-color: #ddd;
 }
 .cartCard button {
   cursor: pointer;
