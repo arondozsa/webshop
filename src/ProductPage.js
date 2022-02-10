@@ -2,17 +2,20 @@ import React from 'react'
 import { useParams } from 'react-router'
 import products from './products.json'
 import { CartContext } from './CartContext'
+import './ProductPage.css'
+
 
 export default function ProductPage() {
   let { prod } = useParams()
   let currentProd = products.find(e => e.name === prod)
   let { cart, setCart } = React.useContext(CartContext)
+  
 
   return (
-    <div>
+    <div className='productContainer'>
       <h2>{currentProd.name}</h2>
       <p>{currentProd.description}</p>
-      <span>{currentProd.price}</span>
+      <span>{currentProd.price * 100} Ft</span>
       <button onClick={() => cart !== null ?
         setCart([...cart, { [currentProd.name] : currentProd.price } ]) 
         : 
@@ -20,4 +23,5 @@ export default function ProductPage() {
       </button>
     </div>
   )
+  
 }
